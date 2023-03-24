@@ -57,7 +57,24 @@ Now we need to add current user to dialout group.
 sudo adduser $USER dialout
 ```
 
-Reboot computer. Important part as it seems.
+Now we will add the rules to udev rules:
+```
+sudo touch /etc/udev/rules.d/carrobot.rules
+sudo nano /etc/udev/rules.d/carrobot.rules
+```
+Add below lines to the file:
+```
+# set the udev rule , make the device_port be fixed by carrobot
+#
+KERNEL=="ttyACM*", ATTRS{idVendor}=="04d9", ATTRS{idProduct}=="b534", MODE:="0777", SYMLINK+="carrobot"
+
+# Please don't forget later to restart services, so you don't need to reboot.
+# sudo service udev reload
+# sudo service udev restart
+```
+And save CTRL-S / CTRL-X
+
+// Reboot computer. Important part as it seems.
 
 Please download and install Arduino IDE from:
 https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE
