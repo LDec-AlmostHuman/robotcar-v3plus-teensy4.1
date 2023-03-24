@@ -57,6 +57,8 @@ Now we need to add current user to dialout group.
 sudo adduser $USER dialout
 ```
 
+Reboot computer. Important part as it seems.
+
 Please download and install Arduino IDE from:
 https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE
 
