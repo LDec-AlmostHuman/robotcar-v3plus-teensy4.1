@@ -109,5 +109,8 @@ After git clone in the ~/Documents/...
 platformio project init # Initialize project
 ```
 # Setting up environment:
-
+Open VSC Code and initialize project from PlatormIO.
+I will explain this in more details later with screenshots.
+```
 pio lib install # Install dependencies
+```
