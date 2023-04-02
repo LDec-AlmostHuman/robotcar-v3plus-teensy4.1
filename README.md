@@ -112,5 +112,9 @@ platformio project init # Initialize project
 Open VSC Code and initialize project from PlatormIO.
 I will explain this in more details later with screenshots.
 ```
-pio lib install # Install dependencies
+pio pkg install # Install dependencies
+```
+pio run # Build the firmware
+```
+pio run --target upload # Flash the firmware
 ```
