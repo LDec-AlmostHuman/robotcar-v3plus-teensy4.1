@@ -98,4 +98,16 @@ Serial.println(data);//data that is being Sent
 delay(200);
 }
 ```
+SEEMS MY Arduino UNO R3 died, seems like oscylator is dead, but Teensy 4.1 arrived, so will continue with Teensy 4.1
 
+Follow ... I will later make this from scratch, now testing if all works.
+```
+https://github.com/micro-ROS/micro_ros_platformio
+```
+After git clone in the ~/Documents/...
+```
+platformio project init # Initialize project
+```
+# Setting up environment:
+
+pio lib install # Install dependencies
